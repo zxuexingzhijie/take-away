@@ -93,4 +93,15 @@ public class EmployeeController {
         return Result.success(result);
     }
 
+    // TODO 员工状态修改,更改员工条件的时候,直接创建新的employee对象,然后对要修改的属性进行赋值,最后用动态sql判断哪些值不为null,不为null的值进行修改
+    /**
+     * 启用禁用员工账号,传过来的有id和status
+     */
+
+    // TODO 编辑员工,跟员工状态修改差不多,直接创建新的employee对象,然后对要修改的属性进行赋值,最后用动态sql判断哪些值不为null,不为null的值进行修改
+    /**
+     * 编辑员工
+     */
+
+
 }
