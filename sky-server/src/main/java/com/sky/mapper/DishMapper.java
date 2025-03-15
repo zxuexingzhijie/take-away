@@ -62,7 +62,6 @@ public interface DishMapper {
      * 
      * @param dish
      */
-
     @autofill(value = OperationType.UPDATE)
     void update(Dish dish);
 
