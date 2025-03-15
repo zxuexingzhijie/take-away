@@ -1,6 +1,7 @@
 package com.sky.controller.admin;
 
 
+import com.sky.constant.MessageConstant;
 import com.sky.result.Result;
 import com.sky.utils.AliOssUtil;
 import lombok.extern.slf4j.Slf4j;
@@ -46,7 +47,7 @@ public class FileUploaderController {
             log.error("文件上传失败：{}", e.getMessage());
             e.printStackTrace();
         }
-        return null;
+        return Result.error(MessageConstant.UPLOAD_FAILED);
     }
 
 }
