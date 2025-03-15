@@ -3,12 +3,12 @@ package com.sky.mapper;
 import java.util.List;
 import java.util.Map;
 
+import com.sky.annotation.autofill;
 import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
 import com.github.pagehelper.Page;
-import com.sky.annotation.AutoFill;
 import com.sky.dto.SetmealPageQueryDTO;
 import com.sky.entity.Setmeal;
 import com.sky.enumeration.OperationType;
@@ -33,7 +33,7 @@ public interface SetmealMapper {
      * @param setmeal
      * @return
      */
-    @AutoFill(OperationType.UPDATE)
+    @autofill(OperationType.UPDATE)
     void update(Setmeal setmeal);
 
     /**
@@ -49,7 +49,7 @@ public interface SetmealMapper {
      *
      * @param setmeal
      */
-    @AutoFill(OperationType.INSERT)
+    @autofill(OperationType.INSERT)
     void insert(Setmeal setmeal);
 
     /**
