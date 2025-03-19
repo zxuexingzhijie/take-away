@@ -79,3 +79,79 @@
 ![image-20250317224540456](https://typora-oss-picgo.oss-cn-beijing.aliyuncs.com/202503172245497.png)
 
 ![image-20250317224728971](https://typora-oss-picgo.oss-cn-beijing.aliyuncs.com/202503172247007.png)
+
+
+
+
+
+#### 添加购物车代码
+
+思路:前端传过来的就三个字段值,一个dishID,一个套餐id,一个数量,dishID和套餐ID只能传过来一个,不能同时传过来,
+
+如果已经存在,则同时传过来
+
+
+
+用动态sql,如果字段有值,则更改
+
+![image-20250319085055876](https://typora-oss-picgo.oss-cn-beijing.aliyuncs.com/202503190850986.png)
+
+![image-20250319090218094](https://typora-oss-picgo.oss-cn-beijing.aliyuncs.com/202503190902206.png)
+
+![image-20250319092953450](https://typora-oss-picgo.oss-cn-beijing.aliyuncs.com/202503190929530.png)
+
+![image-20250319101335951](https://typora-oss-picgo.oss-cn-beijing.aliyuncs.com/202503191013043.png)
+
+
+
+
+
+
+
+#### 用户下单
+
+![image-20250319111756064](https://typora-oss-picgo.oss-cn-beijing.aliyuncs.com/202503191117166.png)
+
+![image-20250319111837232](https://typora-oss-picgo.oss-cn-beijing.aliyuncs.com/202503191118302.png)
+
+![image-20250319112001312](https://typora-oss-picgo.oss-cn-beijing.aliyuncs.com/202503191120411.png)
+
+![image-20250319113702487](https://typora-oss-picgo.oss-cn-beijing.aliyuncs.com/202503191137565.png)
+
+![image-20250319114220985](https://typora-oss-picgo.oss-cn-beijing.aliyuncs.com/202503191142068.png)
+
+![image-20250319114450408](https://typora-oss-picgo.oss-cn-beijing.aliyuncs.com/202503191144482.png)
+
+[Day08-08-用户下单_代码开发2_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1TP411v7v6?spm_id_from=333.788.player.switch&vd_source=beaa4cde13a4cd09b5d2d2aeeee617a4&p=112)****
+
+![image-20250319121013492](https://typora-oss-picgo.oss-cn-beijing.aliyuncs.com/202503191210604.png)
+
+注意方法上要加上事务注解,因为这关联到两张表orders和orderdetail,如果第一张表成功插入了,但第二张表插入失败了, 这时候数据库就不能保持一致,会有脏数据,这时候选择加上事务注解保持一致性.
+
+
+
+#### SpringTask订单状态处理
+
+![image-20250319132015426](https://typora-oss-picgo.oss-cn-beijing.aliyuncs.com/202503191320613.png)
+
+![image-20250319132031200](https://typora-oss-picgo.oss-cn-beijing.aliyuncs.com/202503191320410.png)
+
+![image-20250319133107513](https://typora-oss-picgo.oss-cn-beijing.aliyuncs.com/202503191331583.png)
+
+![image-20250319134715339](https://typora-oss-picgo.oss-cn-beijing.aliyuncs.com/202503191347404.png)
+
+![image-20250319134454644](https://typora-oss-picgo.oss-cn-beijing.aliyuncs.com/202503191344743.png)
+
+#### websocket技术
+
+![image-20250319190431831](https://typora-oss-picgo.oss-cn-beijing.aliyuncs.com/202503191904918.png)
+
+
+
+
+
+#### 导出运营数据Excel报表
+
+![image-20250319203827679](https://typora-oss-picgo.oss-cn-beijing.aliyuncs.com/202503192038757.png)
+
+ 
